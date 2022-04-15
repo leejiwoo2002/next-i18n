@@ -14,5 +14,6 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(url);
   }
 
+  // XXX.ico, XXX.png 등, 파일 형태의 경우 shouldHandleLocale에 해당하지 않아서 locale 지정하지 않고 pass!
   return undefined;
 }
