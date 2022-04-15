@@ -1,16 +1,19 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import { useRouter } from 'next/router';
-import { useTranslation } from "react-i18next";
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import { useTranslation } from 'react-i18next';
 
 const Home: NextPage = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
 
   return (
-    <div >
-      {t('main.title')}
-    </div>
-  )
-}
+    <>
+      <Head>
+        <title>{t('main.title')}</title>
+        <meta name="description" content={t('main.description')} />
+      </Head>
+      <div>{t('main.title')}</div>
+    </>
+  );
+};
 
-export default Home
+export default Home;
