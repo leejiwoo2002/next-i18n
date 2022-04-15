@@ -2,5 +2,7 @@
   "main.title": "JA 메인 페이지 제목.",
   "main.description": "JA 메인 페이지 설명.",
   "blog.title": "JA 블로그 페이지 제목.",
-  "blog.description": "JA 블로그 페이지 설명."
+  "blog.description": "JA 블로그 페이지 설명.",
+  "SSR.title": "JA SSR 페이지 제목.",
+  "SSR.description": "JA SSR 페이지 설명."
 }

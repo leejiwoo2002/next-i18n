@@ -2,5 +2,7 @@
   "main.title": "KO 메인 페이지 제목.",
   "main.description": "KO 메인 페이지 설명.",
   "blog.title": "KO 블로그 페이지 제목.",
-  "blog.description": "KO 블로그 페이지 설명."
+  "blog.description": "KO 블로그 페이지 설명.",
+  "SSR.title": "KO SSR 페이지 제목.",
+  "SSR.description": "KO SSR 페이지 설명."
 }
