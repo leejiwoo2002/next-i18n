@@ -1,10 +1,22 @@
-import type { NextFetchEvent, NextRequest } from 'next/server'
+import { useRouter } from 'next/router';
+import { NextFetchEvent, NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 
-export function middleware(req: NextRequest, ev: NextFetchEvent) {
-    console.log(req);
-    
-    let response = NextResponse.next();
-    return response;
+const PUBLIC_FILE = /\.(.*)$/
 
+export function middleware(request: NextRequest) {
+  const supportLocales = ['ko','en','ja'];
+
+  const shouldHandleLocale =
+    !PUBLIC_FILE.test(request.nextUrl.pathname) &&
+    !request.nextUrl.pathname.includes('/api/') &&
+    request.nextUrl.locale === 'default'
+
+  if (shouldHandleLocale) {
+    const url = request.nextUrl.clone()
+    url.pathname = `/ko${request.nextUrl.pathname}`
+    return NextResponse.redirect(url)
+  }
+
+  return undefined
 }

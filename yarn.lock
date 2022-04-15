@@ -15,7 +15,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.16.3":
+"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.14.5, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.17.2":
   version: 7.17.9
   resolution: "@babel/runtime@npm:7.17.9"
   dependencies:
@@ -1189,6 +1189,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"html-escaper@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "html-escaper@npm:2.0.2"
+  checksum: d2df2da3ad40ca9ee3a39c5cc6475ef67c8f83c234475f24d8e9ce0dc80a2c82df8e1d6fa78ddd1e9022a586ea1bd247a615e80a5cd9273d90111ddda7d9e974
+  languageName: node
+  linkType: hard
+
+"html-parse-stringify@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "html-parse-stringify@npm:3.0.1"
+  dependencies:
+    void-elements: 3.1.0
+  checksum: 334fdebd4b5c355dba8e95284cead6f62bf865a2359da2759b039db58c805646350016d2017875718bc3c4b9bf81a0d11be5ee0cf4774a3a5a7b97cde21cfd67
+  languageName: node
+  linkType: hard
+
 "i18n@workspace:.":
   version: 0.0.0-use.local
   resolution: "i18n@workspace:."
@@ -1198,12 +1214,23 @@ __metadata:
     "@types/react-dom": 18.0.0
     eslint: 8.13.0
     eslint-config-next: 12.1.5
+    i18next: ^21.6.16
     next: 12.1.5
     react: 18.0.0
     react-dom: 18.0.0
+    react-i18next: ^11.16.6
     typescript: 4.6.3
   languageName: unknown
   linkType: soft
+
+"i18next@npm:^21.6.16":
+  version: 21.6.16
+  resolution: "i18next@npm:21.6.16"
+  dependencies:
+    "@babel/runtime": ^7.17.2
+  checksum: f210130fd835ebd90bfdc6a497d3c1d992261174e030e995a03d070b099acba680e495a376eb9255bb8eb68b4e518fe8ea96ec71507e194fd043aecb3397c9a2
+  languageName: node
+  linkType: hard
 
 "ignore@npm:^5.2.0":
   version: 5.2.0
@@ -1880,6 +1907,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-i18next@npm:^11.16.6":
+  version: 11.16.6
+  resolution: "react-i18next@npm:11.16.6"
+  dependencies:
+    "@babel/runtime": ^7.14.5
+    html-escaper: ^2.0.2
+    html-parse-stringify: ^3.0.1
+  peerDependencies:
+    i18next: ">= 19.0.0"
+    react: ">= 16.8.0"
+  peerDependenciesMeta:
+    react-dom:
+      optional: true
+    react-native:
+      optional: true
+  checksum: ed9701036b4e0f446db0381d27162c82418e2244117f6a52b91c7603c6b5e9cb68434a7f625b4cf7287a7650b999916473dcbdf6ab7fc5dedbeaddc2fd03fc3c
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -2266,6 +2312,13 @@ __metadata:
   version: 2.3.0
   resolution: "v8-compile-cache@npm:2.3.0"
   checksum: adb0a271eaa2297f2f4c536acbfee872d0dd26ec2d76f66921aa7fc437319132773483344207bdbeee169225f4739016d8d2dbf0553913a52bb34da6d0334f8e
+  languageName: node
+  linkType: hard
+
+"void-elements@npm:3.1.0":
+  version: 3.1.0
+  resolution: "void-elements@npm:3.1.0"
+  checksum: 0390f818107fa8fce55bb0a5c3f661056001c1d5a2a48c28d582d4d847347c2ab5b7f8272314cac58acf62345126b6b09bea623a185935f6b1c3bbce0dfd7f7f
   languageName: node
   linkType: hard
 
