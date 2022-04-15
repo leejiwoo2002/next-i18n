@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         translation: ja_lokalise,
       },
     },
-    lng: router.locale || 'ko',
+    lng: router.locale,
   });
 
   return <Component {...pageProps} />;
